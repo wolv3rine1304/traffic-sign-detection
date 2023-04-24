@@ -114,9 +114,5 @@ if submit:
         ypred1 = np.round(Y_pred)
         ypred1 = np.asarray(ypred1, dtype='int')
         predict = ""
-        # if ypred1[0] == 0:
-        #     predict = "Not Vehicle"
-        # else:
-        #     predict = "Vehicle"
-        print(numbers_to_strings(ypred1[0]))
+        predict = numbers_to_strings(ypred1[0])
         st.title(predict)
