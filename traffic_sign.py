@@ -98,6 +98,7 @@ def numbers_to_strings(argument):
             41: 'End of no passing',
         42: 'End no passing veh > 3.5 tons'
     }
+    return switcher.get(argument, "nothing")
 
 
 dog_image = st.file_uploader("Upload image")
