@@ -114,5 +114,6 @@ if submit:
         ypred1 = np.argmax(Y_pred)
         predict = ""
 #         predict = numbers_to_strings(ypred1[0])
-        print(numbers_to_strings(ypred1[0]))
+#         print(numbers_to_strings(ypred1[0]))
+        print(ypred1)
         st.title(predict)
