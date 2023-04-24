@@ -61,7 +61,7 @@ def numbers_to_strings(argument):
 image = st.file_uploader("Upload image")
 submit = st.button('Predict')
 if submit:
-    if dog_image is not None:
+    if image is not None:
         file_bytes = np.asarray(bytearray(image.read()), dtype=np.uint8)
         opencv_image = cv2.imdecode(file_bytes, 1)
         st.image(opencv_image, channels="BGR")
