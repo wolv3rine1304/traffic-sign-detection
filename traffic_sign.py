@@ -112,5 +112,6 @@ if submit:
         Y_pred = model.predict(opencv_image)
         ypred1 = np.argmax(Y_pred)
         predict = ""
-        predict = numbers_to_strings(ypred1[0])
+#         predict = numbers_to_strings(ypred1[0])
+        print(numbers_to_strings(ypred1[0]))
         st.title(predict)
